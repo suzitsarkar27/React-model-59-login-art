@@ -1,0 +1,66 @@
+.From-Container{
+    height:700px;
+    width: 500px;
+    border-radius: 8px;
+ background: #FFFFFF;
+border: 1px solid #95A0A7;
+box-sizing: border-box;
+margin: 0 auto;
+/* text-align: center; */
+display: flex;
+justify-content: center;
+margin-top:41px;
+}
+.text-color{
+    color: #2A414F;
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: 400;
+font-size: 35px;
+line-height: 42px;
+letter-spacing: 0.0025em;
+}
+.input-group label{
+    display: block;
+    font-size: 17px;
+}
+.input-group input{
+    width: 415px;
+    height:55px;
+    font-size: 24px;
+    margin-bottom:20px;
+    border-radius: 8px;
+}
+.submit-data{
+    height: 55px;
+    width:415px;
+    margin-top:44px;
+    background: #FF99004D;
+    font-size: 21px;
+    color: #0E161A;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.link-from{
+    color: #FF9900;
+}
+.from-border{
+    display:flex;
+}
+hr{
+    width: 145px;
+    height: 0;
+}
+.from-google{
+    width: 415px;
+    height: 55px;
+    font-size:17px;
+    margin-top: 29px;
+    border-radius: 8px;
+    cursor: pointer;
+    color:gray;
+    background-color: #FFFFFF;
+}
+.infro{
+    text-align: center;
+}
