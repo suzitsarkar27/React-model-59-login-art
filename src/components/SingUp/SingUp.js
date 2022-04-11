@@ -21,11 +21,18 @@ const SingUp = () => {
   const handelError = (event) => {
     setError(event.target.value);
   };
+  const handCreactUser = (event) => {
+    event.precentDefault();
+    if (password !== confromPassword) {
+      setError("Your password did not match");
+      return;
+    }
+  };
   return (
     <div className="From-Container">
-      <form action="">
+      <form onSubmit={handCreactUser}>
         <div>
-          <h2 className="text-color">Login</h2>
+          <h2 className="text-color">Sing Up</h2>
           <div className="input-group">
             <label htmlFor="Email">Email:</label>
             <input onBlur={handelEmail} type="email" name="email" required />
@@ -48,6 +55,7 @@ const SingUp = () => {
               required
             />
           </div>
+          <p style={{ color: "red" }}>{error}</p>
           <input className="submit-data" type="button" value="Submit Data" />
           <p className="infro">
             Already have an account?
